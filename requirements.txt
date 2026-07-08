@@ -23,7 +23,7 @@ langchain-mistralai>=0.1.0
 mistralai>=0.4.0
 
 # RAG components
-chromadb==0.5.0                   # Vector store (local, no infra needed)
+chromadb==0.5.5                   # Vector store (local, no infra needed)
 langchain-chroma>=0.1.0
 sentence-transformers>=3.0.0      # Embedding models
 langchain-huggingface>=0.0.3      # HuggingFace integration for LangChain
@@ -31,7 +31,7 @@ huggingface-hub>=0.23.0
 tiktoken>=0.7.0                   # Token counting for chunk size optimization
 
 # Frontend - Streamlit for quick prototyping
-streamlit>=1.35.0
+streamlit==1.45.1
 streamlit-extras>=0.4.0
 watchdog>=4.0.0                   # Improves dev experience with auto-reload
 
@@ -41,7 +41,7 @@ fpdf2>=2.7.9                      # Lighter alternative if reportlab has issues
 
 # Utils
 python-dotenv>=1.0.0              # Environment variable management
-numpy>=1.26.0
+numpy==1.26.4
 tqdm>=4.66.0
 requests>=2.32.0
 
