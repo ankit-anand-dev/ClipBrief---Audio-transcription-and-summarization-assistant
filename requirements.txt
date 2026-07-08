@@ -10,7 +10,7 @@ ffmpeg-python>=0.2.0              # FFmpeg wrapper (requires system FFmpeg insta
 openai-whisper>=20231117
 torch>=2.2.0                      # Whisper backend
 torchaudio>=2.2.0
-torchvision==0.27.1+cpu          # CPU-only build to save space
+torchvision                       # CPU-only build to save space
 
 # Translation layer for multilingual support
 deep-translator>=1.11.4           # Google Translate wrapper for Hindi→English
