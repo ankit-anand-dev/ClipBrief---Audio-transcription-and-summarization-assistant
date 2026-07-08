@@ -24,6 +24,7 @@ mistralai>=0.4.0
 
 # RAG components
 chromadb==0.5.0                   # Vector store (local, no infra needed)
+langchain-chroma>=0.1.0
 sentence-transformers>=3.0.0      # Embedding models
 langchain-huggingface>=0.0.3      # HuggingFace integration for LangChain
 huggingface-hub>=0.23.0
