@@ -1,0 +1,46 @@
+# requirements.txt
+# ClipBrief - Audio transcription + RAG-driven summarization
+
+# Audio processing pipeline
+yt-dlp>=2024.4.9                  # YouTube audio extraction
+pydub>=0.25.1                     # Audio format conversion & manipulation
+ffmpeg-python>=0.2.0              # FFmpeg wrapper (requires system FFmpeg installation)
+
+# Speech-to-Text - using local Whisper instead of API to reduce costs
+openai-whisper>=20231117
+torch>=2.2.0                      # Whisper backend
+torchaudio>=2.2.0
+torchvision==0.27.1+cpu          # CPU-only build to save space
+
+# Translation layer for multilingual support
+deep-translator>=1.11.4           # Google Translate wrapper for Hindi→English
+
+# LLM stack - went with Mistral for better cost/performance vs OpenAI
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-mistralai>=0.1.0
+mistralai>=0.4.0
+
+# RAG components
+chromadb==0.5.0                   # Vector store (local, no infra needed)
+sentence-transformers>=3.0.0      # Embedding models
+langchain-huggingface>=0.0.3      # HuggingFace integration for LangChain
+huggingface-hub>=0.23.0
+tiktoken>=0.7.0                   # Token counting for chunk size optimization
+
+# Frontend - Streamlit for quick prototyping
+streamlit>=1.35.0
+streamlit-extras>=0.4.0
+watchdog>=4.0.0                   # Improves dev experience with auto-reload
+
+# Document generation
+reportlab>=4.2.0                  # PDF export
+fpdf2>=2.7.9                      # Lighter alternative if reportlab has issues
+
+# Utils
+python-dotenv>=1.0.0              # Environment variable management
+numpy>=1.26.0
+tqdm>=4.66.0
+requests>=2.32.0
+
